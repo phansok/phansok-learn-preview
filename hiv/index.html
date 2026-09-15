@@ -1,114 +1,435 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HIV | Phan Sok Learning</title>
+
+    <title>HIV | Phan Sok Learning Hub</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f7fa;
+            color: #333;
+        }
+
+        header {
+            background: #7b1e3a;
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 1050px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .intro h2 {
+            color: #7b1e3a;
+        }
+
+        .intro p {
+            line-height: 1.7;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Main sections */
+
+        .section-title {
+            color: #7b1e3a;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .main-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .main-card h3 {
+            color: #7b1e3a;
+            margin-top: 0;
+            font-size: 24px;
+        }
+
+        .main-card p {
+            line-height: 1.7;
+        }
+
+        .main-card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 17px;
+            background: #7b1e3a;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .main-card a:hover {
+            background: #5e162d;
+        }
+
+        /* Topic cards */
+
+        .topics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .topic {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .topic h3 {
+            margin-top: 0;
+            color: #7b1e3a;
+        }
+
+        .topic p {
+            line-height: 1.6;
+        }
+
+        .coming {
+            opacity: 0.7;
+        }
+
+        .coming-text {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #777;
+            font-style: italic;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+            background: #eee;
+            color: #666;
+        }
+    </style>
 </head>
+
 
 <body>
 
-    <p><a href="../">← Back to Home</a></p>
+    <!-- HEADER -->
 
-    <h1>HIV</h1>
+    <header>
 
-    <p>
-        HIV research, learning resources, health-related quality of life,
-        aging, and health equity.
-    </p>
+        <h1>HIV</h1>
 
-    <h2>HIV & Aging</h2>
-    <p>
-        Research on older adults living with HIV.
-    </p>
-
-    <h2>Health-Related Quality of Life</h2>
-    <p>
-        Research on HRQoL among people living with HIV.
-    </p>
-
-    <h2>MOS-HIV</h2>
-    <p>
-        Measurement, validity, reliability, and psychometric evaluation.
-    </p>
-
-    <h2>Basic Living Needs</h2>
-    <p>
-        Food, clothing, shelter, transportation, and other basic living needs.
-    </p>
-
-    <h2>Research Methods</h2>
-    <p>
-        SAS, R, longitudinal analysis, and other HIV research methods.
-    </p>
-
-    <div class="topics">
-
-    <div class="topic">
-        <h2>HIV & Aging</h2>
         <p>
-            Research on older adults living with HIV, aging, longevity,
-            and healthy aging.
+            HIV research, data, methods, and learning resources
         </p>
+
+    </header>
+
+
+    <div class="container">
+
+
+        <!-- INTRODUCTION -->
+
+        <section class="intro">
+
+            <h2>HIV Research & Learning</h2>
+
+            <p>
+                This section brings together Canadian HIV data,
+                conceptual and theoretical frameworks, research
+                findings, statistical analyses, measurement methods,
+                and practical learning resources.
+            </p>
+
+        </section>
+
+
+        <!-- 1. PLWH + MAP -->
+
+        <h2 class="section-title">
+            1. PLWH + Map
+        </h2>
+
+        <div class="main-card">
+
+            <h3>
+                People Living with HIV in Canada
+            </h3>
+
+            <p>
+                Explore the estimated number of people living with HIV
+                (PLWH) in Canada and their geographic distribution
+                across provinces and territories.
+            </p>
+
+            <p>
+                This section will use publicly available Canadian HIV
+                surveillance data and R-based geographic visualization.
+            </p>
+
+            <a href="plwh-map/">
+                Explore PLWH + Map
+            </a>
+
+        </div>
+
+
+        <!-- 2. CONCEPTUAL / THEORETICAL MODEL -->
+
+        <h2 class="section-title">
+            2. Conceptual / Theoretical Model
+        </h2>
+
+        <div class="main-card">
+
+            <h3>
+                A Holistic Model of HIV, Aging, and Health
+            </h3>
+
+            <p>
+                This framework brings together biological, psychological,
+                social, and structural factors to understand the
+                interconnected experiences of people living with HIV.
+            </p>
+
+            <p>
+                The model considers relationships among HIV and aging,
+                health-related quality of life, stigma, depression,
+                comorbidities, basic living needs, and other determinants
+                of health. Measurement and prevention are also considered
+                through MOS-HIV and PrEP.
+            </p>
+
+            <div class="coming-text">
+                Conceptual and theoretical model — coming soon
+            </div>
+
+        </div>
+
+
+        <!-- 3. HIV TOPICS -->
+
+        <h2 class="section-title">
+            3. HIV Topics
+        </h2>
+
+
+        <section class="topics">
+
+
+            <!-- HIV AGING -->
+
+            <div class="topic coming">
+
+                <h3>HIV Aging</h3>
+
+                <p>
+                    HIV, aging, survivorship, health, and quality
+                    of life among older people living with HIV.
+                </p>
+
+                <div class="coming-text">
+                    Coming soon
+                </div>
+
+            </div>
+
+
+            <!-- HRQoL -->
+
+            <div class="topic coming">
+
+                <h3>HRQoL</h3>
+
+                <p>
+                    Health-related quality of life, including
+                    physical and mental health among PLWH.
+                </p>
+
+                <div class="coming-text">
+                    Coming soon
+                </div>
+
+            </div>
+
+
+            <!-- STIGMA -->
+
+            <div class="topic coming">
+
+                <h3>Stigma</h3>
+
+                <p>
+                    HIV stigma and its relationships with health,
+                    social conditions, and quality of life.
+                </p>
+
+                <div class="coming-text">
+                    Coming soon
+                </div>
+
+            </div>
+
+
+            <!-- DEPRESSION -->
+
+            <div class="topic coming">
+
+                <h3>Depression</h3>
+
+                <p>
+                    Depression, mental health, and related factors
+                    among people living with HIV.
+                </p>
+
+                <div class="coming-text">
+                    Coming soon
+                </div>
+
+            </div>
+
+
+            <!-- COMORBIDITIES -->
+
+            <div class="topic coming">
+
+                <h3>Comorbidities</h3>
+
+                <p>
+                    Multimorbidity and chronic health conditions
+                    among people living with HIV, particularly
+                    in the context of aging.
+                </p>
+
+                <div class="coming-text">
+                    Coming soon
+                </div>
+
+            </div>
+
+
+            <!-- BLN -->
+
+            <div class="topic coming">
+
+                <h3>Basic Living Needs (BLN)</h3>
+
+                <p>
+                    Unmet basic living needs and their relationships
+                    with health-related quality of life among PLWH.
+                </p>
+
+                <div class="coming-text">
+                    Coming soon
+                </div>
+
+            </div>
+
+
+            <!-- MOS-HIV -->
+
+            <div class="topic coming">
+
+                <h3>MOS-HIV</h3>
+
+                <p>
+                    Measurement, psychometrics, and validation of
+                    the Medical Outcomes Study HIV Health Survey.
+                </p>
+
+                <div class="coming-text">
+                    Coming soon
+                </div>
+
+            </div>
+
+
+            <!-- PrEP -->
+
+            <div class="topic coming">
+
+                <h3>PrEP</h3>
+
+                <p>
+                    HIV prevention, pre-exposure prophylaxis,
+                    access, uptake, and related research.
+                </p>
+
+                <div class="coming-text">
+                    Coming soon
+                </div>
+
+            </div>
+
+
+            <!-- OTHER -->
+
+            <div class="topic coming">
+
+                <h3>Other HIV Topics</h3>
+
+                <p>
+                    Additional HIV research, data analyses,
+                    methods, and learning resources.
+                </p>
+
+                <div class="coming-text">
+                    Coming soon
+                </div>
+
+            </div>
+
+
+        </section>
+
     </div>
 
-    <div class="topic">
-        <h2>Health-Related Quality of Life</h2>
-        <p>
-            Research on HRQoL among people living with HIV, including
-            physical and mental health.
-        </p>
-    </div>
 
-    <div class="topic">
-        <h2>MOS-HIV</h2>
-        <p>
-            Measurement, validity, reliability, and psychometric evaluation
-            of the MOS-HIV.
-        </p>
-    </div>
+    <!-- FOOTER -->
 
-    <div class="topic">
-        <h2>Basic Living Needs</h2>
-        <p>
-            Food, clothing, shelter, transportation, and other basic living
-            needs among people living with HIV.
-        </p>
-    </div>
+    <footer>
 
-    <div class="topic">
-        <h2>HIV Stigma</h2>
-        <p>
-            Structural, interpersonal, and other forms of HIV-related stigma
-            and their relationship with health and well-being.
-        </p>
-    </div>
+        <p>Phan Sok Learning Hub</p>
 
-    <div class="topic">
-        <h2>Research Methods</h2>
         <p>
-            Longitudinal analysis, regression, GEE, trajectories,
-            psychometrics, and other methods used in HIV research.
+            HIV Research & Learning
         </p>
-    </div>
 
-    <div class="topic">
-        <h2>SAS & R</h2>
-        <p>
-            Statistical programming, data management, analysis, and
-            reproducible research resources.
-        </p>
-    </div>
+    </footer>
 
-    <div class="topic">
-        <h2>Publications</h2>
-        <p>
-            Selected publications and research outputs related to HIV,
-            aging, health, and health equity.
-        </p>
-    </div>
-
-</div>
 
 </body>
+
 </html>
+```
+
